@@ -70,6 +70,7 @@ export default class SignUp extends Component {
             value={displayName}
             onChange={this.handleChange}
             label='Display Name'
+            autoComplete='off'
             required
           />
 
@@ -79,6 +80,7 @@ export default class SignUp extends Component {
             value={email}
             onChange={this.handleChange}
             label='Email'
+            autoComplete='off'
             required
           />
 
@@ -88,6 +90,7 @@ export default class SignUp extends Component {
             value={password}
             onChange={this.handleChange}
             label='Password'
+            autoComplete='off'
             required
           />
 
@@ -97,6 +100,7 @@ export default class SignUp extends Component {
             value={confirmPassword}
             onChange={this.handleChange}
             label='Confirm password'
+            autoComplete='off'
             required
           />
 
