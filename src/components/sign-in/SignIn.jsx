@@ -47,7 +47,7 @@ export default class SignIn extends Component {
             value={this.state.email}
             handleChange={this.handleChange}
             label='email'
-            autoComplete='off'
+            autoComplete='on'
             required
           />
 
@@ -57,7 +57,7 @@ export default class SignIn extends Component {
             value={this.state.password}
             handleChange={this.handleChange}
             label='password'
-            autoComplete='off'
+            autoComplete='on'
             required
           />
           <div className='buttons'>
