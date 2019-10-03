@@ -7,10 +7,12 @@ import CustomButton from '../custom-button/CustomButton';
 import CartItem from '../cart-item/CartItem';
 
 import { selectCartItems } from '../../redux/cart/cartSelectors';
+import { toggleCartHidden } from '../../redux/cart/cartActions';
 
 import './cartDropdown.scss';
 
-const CartDropdown = ({ cartItems, history }) => {
+const CartDropdown = ({ cartItems, history, dispatch }) => {
+  // dispatch is avalable when connect() as only 1 argument
   // history comes from withRouter wrapper
   return (
     <div className='cart-dropdown'>
@@ -23,7 +25,12 @@ const CartDropdown = ({ cartItems, history }) => {
           <span className='empty-message'>Your cart is empty</span>
         )}
       </div>
-      <CustomButton onClick={() => history.push('/checkout')}>
+      <CustomButton
+        onClick={() => {
+          history.push('/checkout');
+          dispatch(toggleCartHidden());
+        }}
+      >
         GO TO CHECKOUT
       </CustomButton>
     </div>
