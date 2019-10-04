@@ -2,9 +2,9 @@ import React from 'react';
 
 import CollectionItem from '../../components/collection-item/CollectionItem';
 
-import './category.scss';
+import './collection.scss';
 
-const Category = ({ match }) => {
+const Collection = ({ match }) => {
   return (
     <div className='category'>
       <h2>CATEGORY PAGE</h2>
@@ -13,4 +13,4 @@ const Category = ({ match }) => {
   );
 };
 
-export default Category;
+export default Collection;

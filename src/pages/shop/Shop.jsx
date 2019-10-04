@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import CollectionsOverview from '../../components/collections-overview/CollectionsOverview';
-import Category from '../category/Category';
+import Category from '../collection/Collection';
 
 const Shop = ({ match }) => {
   // match, location and history are there because of <Route path='/shop' component={ShopPage} /> in App.js
