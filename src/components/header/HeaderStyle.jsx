@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
-const OptionContainerSyles = css`
-  padding: 10px 15px;
-  cursor: pointer;
-`; // for replacing the same className in a div and in a Link see bellow
+// const OptionContainerSyles = css`
+//   padding: 10px 15px;
+//   cursor: pointer;
+// `; // for replacing the same className in a div and in a Link see bellow
 
 export const HeaderContainer = styled.div`
   height: 70px;
@@ -28,10 +28,10 @@ export const OptionsContainer = styled.div`
   justify-content: flex-end;
 `;
 
+// export const OptionLink = styled(Link)`
+//   ${OptionContainerSyles}
+// `;
 export const OptionLink = styled(Link)`
-  ${OptionContainerSyles}
-`;
-
-export const OptionDiv = styled.div`
-  ${OptionContainerSyles}
+  padding: 10px 15px;
+  cursor: pointer;
 `;
